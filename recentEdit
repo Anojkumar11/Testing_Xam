@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -217,11 +218,11 @@ public class Testingclass {
 //		
 //		 Thread.sleep(8000);
 //		 
-//		 WebElement EmailidElement2 = driver.findElement(By.xpath("//*[@id=\"identifierId\"]")); 
+//		 WebElement EmailidElement2 = driver.findElement(By.name("identifier")); 
 //		 EmailidElement2.sendKeys("banoj@stratapps.com");
 //		 driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
 //			
-//		Thread.sleep(3000);
+//		Thread.sleep(6000);
 //			
 //		WebElement EmailpwdElement2 = driver.findElement(By.name("password")); 
 //		EmailpwdElement2.sendKeys("Anojmsinus");
@@ -230,7 +231,7 @@ public class Testingclass {
 //		Thread.sleep(20000);				
 //			
 //		driver.findElement(By.xpath("//div[@class='dropins-chooser-files-list']//li[4]//div[1]//div[1]//label[1]//span[1]")).click();
-//		driver.findElement(By.xpath("//span[contains(text(),'Choose')]")).click();
+//		driver.findElement(By.cssSelector("div.dropins-chooser-page div.dropins-chooser-parent div.dropins-chooser div.dropins-chooser-main div.dropins-chooser-footer button.mc-button.mc-button-primary > span.mc-button-content")).click();
 //			
 //		Thread.sleep(8000);
 //			
@@ -295,65 +296,100 @@ public class Testingclass {
 //		 
 //		 Thread.sleep(10000);
 //		
-		
+//		
 //Manage Videos//
 		
 		WebElement ele7=driver.findElement(By.xpath("//a[@href='javascript:;']//i[@class='fa fa-cloud-upload']"));//hover_uploadcontent
 		Actions act6=new Actions(driver);
 		act6.moveToElement(ele7).perform();
 		driver.findElement(By.xpath("//span[contains(text(),'Manage Videos')]")).click();
-		
-		Thread.sleep(8000);
-		
-		WebElement Video_search = driver.findElement(By.xpath("//input[@placeholder='Search for a Video']")); 
-		Video_search.sendKeys("Ready for Automation");
-		driver.findElement(By.xpath("//i[@class='fa fa-search']")).click();
-		
-		Thread.sleep(8000);
-		
-		driver.findElement(By.xpath("//div[@class='actions-block override-actions']//i[@class='fa fa-pencil-square-o']")).click();
-	
-		Thread.sleep(10000);
-		Select dropdown = new Select(driver.findElement(By.xpath("//select[@title='select a category']")));
-		dropdown.selectByVisibleText("Entertainment");
-		
-		WebElement Video_Tag = driver.findElement(By.xpath("//input[@placeholder='Add a tag & press Enter']")); 
-		Video_Tag.sendKeys("Ready for Automation");
-		Video_Tag.sendKeys(Keys.ENTER);
-		
-// Upload your own ThumbNail //
-		
-		WebElement Edit_radio=driver.findElement(By.xpath("//input[@value='2']"));
-		Edit_radio.click();
-		driver.findElement(By.xpath("//input[@id='ownFileuplad']")).click();
-	Thread.sleep(8000);
-		Runtime.getRuntime().exec("C:\\Users\\anojk\\Desktop\\AutoIT\\Thumbnail.exe");
-	Thread.sleep(5000);
-	
-//	video Player Appearance //
-	
-	driver.findElement(By.xpath("//div[@class='portlet box blue']//div[@class='col-xs-12 caption p01']")).click();
-Thread.sleep(8000);
-	driver.findElement(By.xpath("//div[@class='bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-off bootstrap-switch-small']//span[@class='bootstrap-switch-label']")).click();
-	
-Thread.sleep(5000);
-	
-	driver.findElement(By.xpath("/html")).click();
-	driver.findElement(By.xpath("//switch[@class='ng-tns-c18-15 ng-tns-c25-49']//div[@class='bootstrap-switch-container ng-trigger ng-trigger-statusChange']")).click();
 
-	
-	// To Update //
-		
-	driver.findElement(By.xpath("//button[contains(text(),'Update')]")).click();		
-	
-	//Delete the Video//
-	
+//Delete the Video//
+
+Thread.sleep(8000);	
+			
 	driver.findElement(By.xpath("//tbody//tr[2]//td[4]//div[1]//a[4]//i[1]")).click();
 	driver.findElement(By.xpath("//button[@class='swal2-confirm styled']")).click();
 	
+Thread.sleep(5000);
+
+driver.findElement(By.xpath("//button[@type='button']")).click();
+		
+//Thread.sleep(8000);
+//		
+//		WebElement Video_search = driver.findElement(By.xpath("//input[@placeholder='Search for a Video']")); 
+//		Video_search.sendKeys("Ready for Automation");
+//		driver.findElement(By.xpath("//i[@class='fa fa-search']")).click();
+//		
+//Thread.sleep(8000);
+//	
+//		driver.findElement(By.xpath("//div[@class='actions-block override-actions']//i[@class='fa fa-pencil-square-o']")).click();
+//	
+//Thread.sleep(10000);
+//		Select dropdown = new Select(driver.findElement(By.xpath("//select[@title='select a category']")));
+//		dropdown.selectByVisibleText("Entertainment");
+//		
+//		WebElement Video_Tag = driver.findElement(By.xpath("//input[@placeholder='Add a tag & press Enter']")); 
+//		Video_Tag.sendKeys("Ready for Automation");
+//		Video_Tag.sendKeys(Keys.ENTER);
+//		
+//// Upload your own ThumbNail //
+//	
+//		WebElement Edit_radio=driver.findElement(By.xpath("//input[@value='2']"));
+//		Edit_radio.click();
+//		driver.findElement(By.xpath("//input[@id='ownFileuplad']")).click();
+//Thread.sleep(8000);
+//		Runtime.getRuntime().exec("C:\\Users\\anojk\\Desktop\\AutoIT\\Thumbnail.exe");
+//Thread.sleep(5000);
+//	
+////	video Player Appearance //
+//	
+//	driver.findElement(By.xpath("//div[@class='portlet box blue']//div[@class='col-xs-12 caption p01']")).click();
+//Thread.sleep(8000);
+//	driver.findElement(By.xpath("//div[@class='bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-animate bootstrap-switch-off bootstrap-switch-small']//span[@class='bootstrap-switch-label']")).click();
+//	
+//
+//	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/app-edit-video[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[3]/div[2]/div[1]/div[1]/div[2]/div[9]/div[1]/switch[1]/div[1]/div[1]/span[2]")).click();
+//Thread.sleep(5000);
+//
+////Call To Action //
+//	
+//	driver.findElement(By.xpath("//h4[contains(text(),'Call to Action')]")).click();
+//Thread.sleep(4000);
+//	driver.findElement(By.xpath("//span[@class='bootstrap-switch-handle-on bootstrap-switch-success']")).click();
+//
+//Thread.sleep(5000);	
+//	
+//	driver.findElement(By.xpath("//img[@id='myBtn']")).click();
+//	
+//Thread.sleep(8000);	
+//
+//	driver.findElement(By.xpath("//button[contains(text(),'Update')]")).click();
+
+
+//Sort BY // 
+
+Thread.sleep(8000);
+	
+	Select dropdown_sort = new Select(driver.findElement(By.xpath("//select[@class='form-control select-option ng-pristine ng-valid ng-touched']")));
+	dropdown_sort.selectByVisibleText("Title (A-Z)");
+
+Thread.sleep(10000);
+
+//select the Category // 
+
+		Select dropdown_cat = new Select(driver.findElement(By.xpath("//select[@class='form-control select-option ng-pristine ng-valid ng-touched']")));
+		dropdown_cat.selectByVisibleText("Entertainment");	
+
+		Thread.sleep(8000);
+	
+// Grid View // 
+
+		driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[2]/i[1]")).click();
+Thread.sleep(8000);	
+	
 	}
 }
-
 
 
 
