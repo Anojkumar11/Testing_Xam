@@ -295,32 +295,47 @@ public class Testingclass {
 //		 driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
 //		 
 //		 Thread.sleep(10000);
-//		
-//		
-//Manage Videos//
-		
-		WebElement ele7=driver.findElement(By.xpath("//a[@href='javascript:;']//i[@class='fa fa-cloud-upload']"));//hover_uploadcontent
-		Actions act6=new Actions(driver);
-		act6.moveToElement(ele7).perform();
-		driver.findElement(By.xpath("//span[contains(text(),'Manage Videos')]")).click();
-
-//Delete the Video//
-
-Thread.sleep(8000);	
-			
-	driver.findElement(By.xpath("//tbody//tr[2]//td[4]//div[1]//a[4]//i[1]")).click();
-	driver.findElement(By.xpath("//button[@class='swal2-confirm styled']")).click();
 	
-Thread.sleep(5000);
+//*******************************************************************************************************************************************************//		
 
-driver.findElement(By.xpath("//button[@type='button']")).click();
-		
+////Manage Videos//
+//		
+//		WebElement ele7=driver.findElement(By.xpath("//a[@href='javascript:;']//i[@class='fa fa-cloud-upload']"));//hover_uploadcontent
+//		Actions act6=new Actions(driver);
+//		act6.moveToElement(ele7).perform();
+//		driver.findElement(By.xpath("//span[contains(text(),'Manage Videos')]")).click();
+//
+////Delete the Video//
+//
+//Thread.sleep(8000);	
+//			
+//	driver.findElement(By.xpath("//tbody//tr[2]//td[4]//div[1]//a[4]//i[1]")).click();
+//	driver.findElement(By.xpath("//button[@class='swal2-confirm styled']")).click();
+//	
+//Thread.sleep(5000);
+//
+//driver.findElement(By.xpath("//button[@type='button']")).click();
+//		
+////Search Option in video//
+//
 //Thread.sleep(8000);
 //		
 //		WebElement Video_search = driver.findElement(By.xpath("//input[@placeholder='Search for a Video']")); 
 //		Video_search.sendKeys("Ready for Automation");
 //		driver.findElement(By.xpath("//i[@class='fa fa-search']")).click();
-//		
+//
+//
+//// To See The Analytics //
+//Thread.sleep(8000);
+//
+//	driver.findElement(By.xpath("//div[@class='actions-block override-actions']//i[@class='fa fa-line-chart']")).click();
+//	
+//Thread.sleep(8000);
+//
+//	driver.findElement(By.xpath("//a[contains(text(),'Manage Videos')]")).click();
+//
+//// Edit THE Video //
+//
 //Thread.sleep(8000);
 //	
 //		driver.findElement(By.xpath("//div[@class='actions-block override-actions']//i[@class='fa fa-pencil-square-o']")).click();
@@ -341,7 +356,7 @@ driver.findElement(By.xpath("//button[@type='button']")).click();
 //Thread.sleep(8000);
 //		Runtime.getRuntime().exec("C:\\Users\\anojk\\Desktop\\AutoIT\\Thumbnail.exe");
 //Thread.sleep(5000);
-//	
+//
 ////	video Player Appearance //
 //	
 //	driver.findElement(By.xpath("//div[@class='portlet box blue']//div[@class='col-xs-12 caption p01']")).click();
@@ -359,38 +374,129 @@ driver.findElement(By.xpath("//button[@type='button']")).click();
 //	driver.findElement(By.xpath("//span[@class='bootstrap-switch-handle-on bootstrap-switch-success']")).click();
 //
 //Thread.sleep(5000);	
-//	
+//
 //	driver.findElement(By.xpath("//img[@id='myBtn']")).click();
 //	
 //Thread.sleep(8000);	
 //
 //	driver.findElement(By.xpath("//button[contains(text(),'Update')]")).click();
+//	
+////Sort BY // 
+//
+//Thread.sleep(8000);
+//	
+////	Select dropdown_sort = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+////	dropdown_sort.selectByVisibleText("Title (A-Z)");
+//
+////	Select dropdown_sort = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+////	dropdown_sort.selectByVisibleText("Title (Z-A)");
+//	
+//	Select dropdown_sort = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+//	dropdown_sort.selectByVisibleText("Upload Date (ASC)");
+//	
+////	Select dropdown_sort = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+////	dropdown_sort.selectByVisibleText("Upload Date(DESC)");
+//	
+//Thread.sleep(10000);
+//
+////select the Category // 
+//
+//		Select dropdown_cat = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]")));
+//		dropdown_cat.selectByVisibleText("Media");	
+//
+//Thread.sleep(8000);
+//	
+////// Grid View // 
+//
+//		driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[2]/i[1]")).click();
+//Thread.sleep(8000);	
+//
+//// List View //
+//	
+//	driver.findElement(By.xpath("//i[@class='fa fa-th-list p10']")).click();
+//Thread.sleep(8000);
+//
+////Search Option in video to create A Campaign //
+//
+//	Thread.sleep(8000);
+//			
+//			WebElement Video_search1 = driver.findElement(By.xpath("//input[@placeholder='Search for a Video']"));
+//			Video_search1.sendKeys("Minister KTR Speech");
+//			driver.findElement(By.xpath("//i[@class='fa fa-search']")).click();
+//			
+////Creating An Campaign //
+//		
+//Thread.sleep(8000);
+//		driver.findElement(By.xpath("//tbody//tr[1]//td[4]//div[1]//a[2]//i[1]")).click();
+//Thread.sleep(5000);		
+//		driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
+//Thread.sleep(5000);
 
+//*******************************************************************************************************************************************************//	
+		
+//Manage Content //
+		
+		WebElement ele8=driver.findElement(By.xpath("//a[@href='javascript:;']//i[@class='fa fa-cloud-upload']"));//hover_uploadcontent
+		Actions act7=new Actions(driver);
+		act7.moveToElement(ele8).perform();
+		driver.findElement(By.xpath("//span[contains(text(),'Manage Content')]")).click();
 
-//Sort BY // 
+//DELETE CONTENT//
+		
+Thread.sleep(5000);
+		
+	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-content-management[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/section[1]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/div[1]/a[2]/i[1]")).click();
+	driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/button[1]")).click();
 
+Thread.sleep(5000);	
+	driver.findElement(By.xpath("//div[@class='alert alert-dismissible m0 alert-success']//button[@type='button']")).click();
+
+	
+//Sort_content//
+	
 Thread.sleep(8000);
 	
-	Select dropdown_sort = new Select(driver.findElement(By.xpath("//select[@class='form-control select-option ng-pristine ng-valid ng-touched']")));
-	dropdown_sort.selectByVisibleText("Title (A-Z)");
+//	Select dropdown_Content1 = new Select(driver.findElement(By.xpath("//select[@class='form-control ng-pristine ng-valid ng-touched']")));
+//	dropdown_Content1.selectByVisibleText("File Name(A-Z)");
 
+//	Select dropdown_Content2 = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+//	dropdown_Content2.selectByVisibleText("File Name (Z-A)");
+//	
+//	Select dropdown_Content3 = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+//	dropdown_Content3.selectByVisibleText("Upload Date(ASD)");
+//	
+//	Select dropdown_Content4 = new Select(driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/select[1]")));
+//	dropdown_Content4.selectByVisibleText("Upload Date(DSD)");
+	
 Thread.sleep(10000);
 
-//select the Category // 
+//GRID VIEW //
 
-		Select dropdown_cat = new Select(driver.findElement(By.xpath("//select[@class='form-control select-option ng-pristine ng-valid ng-touched']")));
-		dropdown_cat.selectByVisibleText("Entertainment");	
+	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-content-management[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/span[2]/i[1]")).click();
 
-		Thread.sleep(8000);
+Thread.sleep(5000);
+
+//LIST VIEW //
+
+	driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-content-management[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/span[1]/i[1]")).click();
+
+Thread.sleep(5000);
+
 	
-// Grid View // 
+//SEARCH OPTION //
 
-		driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/app-home[1]/div[1]/div[1]/app-manage-video[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/span[2]/i[1]")).click();
-Thread.sleep(8000);	
+Thread.sleep(8000);
+
+	WebElement Content_search = driver.findElement(By.xpath("//input[@placeholder='Search for a file']")); 
+	Content_search.sendKeys("tiger.dds");
+	driver.findElement(By.xpath("//i[@class='fa fa-search']")).click();
+	
+//Preview the content //
+Thread.sleep(5000);
+	driver.findElement(By.xpath("//tbody//tr[1]//td[6]//div[1]//a[1]//i[1]")).click();
 	
 	}
 }
-
 
 
 
