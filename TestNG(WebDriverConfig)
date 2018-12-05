@@ -1,0 +1,19 @@
+package Xamplify_TNG;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebDriverConfig {
+
+public static WebDriver driver;
+
+  public static WebDriver getInstance() {
+    if (driver == null) {
+System.setProperty("webdriver.chrome.driver","D:\\Selenium\\chromedriver2.exe");
+
+      driver = new ChromeDriver();
+    }
+    return driver;
+  }
+
+}
