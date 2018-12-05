@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+<test name="Test">
+  <classes>
+    <class name="Xamplify_TNG.TestAnnotations" />
+  </classes>
+  
+</test> <!-- Test -->
+<test name="Testuploadcontent">
+  <classes>
+    <class name="Xamplify_TNG.UploadContent" />
+  </classes>
+  
+</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
